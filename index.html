@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swarupa Uday Manve | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #f8f9ff, #eef1ff);
+            color:#333;
+        }
+
+        header{
+            background:#1e1e2f;
+            color:white;
+            padding:20px 10%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1{
+            font-size:22px;
+            letter-spacing:1px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-size:14px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#a29bfe;
+        }
+
+        .hero{
+            padding:60px 10%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .hero-text{
+            width:55%;
+        }
+
+        .hero-text h2{
+            font-size:36px;
+            margin-bottom:15px;
+            color:#2d3436;
+        }
+
+        .hero-text p{
+            margin-bottom:20px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:10px 18px;
+            background:#6c5ce7;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            font-size:14px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#4834d4;
+        }
+
+        .hero img{
+            width:260px;
+            border-radius:12px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        section h3{
+            font-size:26px;
+            margin-bottom:20px;
+            border-left:4px solid #6c5ce7;
+            padding-left:10px;
+        }
+
+        .about-container{
+            display:flex;
+            align-items:center;
+            gap:40px;
+        }
+
+        .about-container img{
+            width:220px;
+            border-radius:10px;
+        }
+
+        .skills-list{
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+        }
+
+        .skill{
+            background:white;
+            padding:10px 15px;
+            border-radius:20px;
+            box-shadow:0 5px 12px rgba(0,0,0,0.08);
+            font-size:14px;
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .project-card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 8px 18px rgba(0,0,0,0.08);
+            transition:0.3s;
+        }
+
+        .project-card:hover{
+            transform:translateY(-5px);
+        }
+
+        .project-card img{
+            width:100%;
+            border-radius:8px;
+            margin-bottom:10px;
+        }
+
+        .contact p{
+            margin-bottom:10px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#1e1e2f;
+            color:white;
+            font-size:14px;
+        }
+
+        @media(max-width:768px){
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .hero-text{
+                width:100%;
+            }
+
+            .about-container{
+                flex-direction:column;
+                text-align:center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Swarupa Uday Manve</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div class="hero-text">
+        <h2>Hello, I'm Swarupa 👩‍💻</h2>
+        <p>
+            A passionate Computer Engineering student, currently in Second Year at
+            Viva Institute of Technology, Virar, Mumbai.
+            I enjoy building creative and efficient tech solutions.
+        </p>
+        <a href="#contact" class="btn">Let's Connect</a>
+    </div>
+
+  
+    <img src="profile img.jpeg" alt="Swarupa Photo">
+</div>
+
+<section id="about">
+    <h3>About Me</h3>
+    <div class="about-container">
+        <img src="profile img.jpeg" alt="Profile Image">
+        <p>
+                      Hi, I'm Swarupa Uday Manve, a Second-Year Computer Engineering student 
+            at Viva Institute of Technology, Virar. I enjoy connecting with people, 
+            sharing ideas, and learning new things every day. <br>
+            
+            I am passionate about technology and continuously explore new tools 
+            and programming concepts to improve my skills. I believe in growing 
+            through experience, teamwork, and constant learning.
+
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h3>Skills</h3>
+    <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">C Programming</div>
+        <div class="skill">Data Structures</div>
+        <div class="skill">Problem Solving</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+
+        <div class="project-card">
+            <img src="project1.png" alt="Project 1">
+            <h4>Student Attendance Monitoring System</h4>
+            <p>
+                A smart system designed to automate attendance tracking 
+                and generate student performance reports efficiently.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <img src="project2.png" alt="Project 2">
+            <h4>Women SOS Safety Application</h4>
+            <p>
+                An emergency alert application that enables quick 
+                location sharing and instant help notifications.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <img src="project3.png" alt="Project 3">
+            <h4>Calculator Application</h4>
+            <p>
+                A simple and user-friendly calculator developed 
+                to perform basic arithmetic operations efficiently.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <img src="project4.png" alt="Project 4">
+            <h4>Recipe Book (GUI Based)</h4>
+            <p>
+                A graphical user interface-based recipe management 
+                system that allows users to view and organize recipes easily.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="resume">
+    <h3>Resume</h3>
+    <p>You can download my resume using the link below:</p>
+    <a href="Swarupa_Resume.pdf" class="btn" download>Download Resume</a>
+</section>
+
+<section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <p>Email: swarupamanve15@gmail.com</p>
+    <p>Phone: +91 9699603243</p>
+    <p>Location: Borivali, Mumbai</p>
+</section>
+
+<footer>
+    © 2026 Swarupa Uday Manve | All Rights Reserved
+</footer>
+
+</body>
+</html>
